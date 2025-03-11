@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o PES1UG22CS177-1 main.cpp'
+                    sh 'gp++ -o PES1UG22CS177-1 main.cpp'  // Intentional error
                 }
             }
         }
@@ -30,4 +30,5 @@ pipeline {
             echo 'Pipeline failed' 
         }
     }
+}
 
